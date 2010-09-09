@@ -300,7 +300,7 @@ sub indent
     my @args = @_;
     
     return ($self->spacechar x ($self->spaces * $self->level)) .
-           "@args" . ($self->add_newline ? "\n" : undef);
+           "@args" . ($self->add_newline ? "\n" : '');
     
 }
 
